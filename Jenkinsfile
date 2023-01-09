@@ -44,4 +44,8 @@ node {
 
 }
 
+    stage ('run deploy') {
+        sh 'kubectl apply -f deployment.yaml'
+    }
+
 }
