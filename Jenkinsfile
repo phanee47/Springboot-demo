@@ -16,13 +16,6 @@ node {
        app = docker.build("phanee47/springtest")
     }
 
-    stage('Test image') {
-  
-
-        app.inside {
-            sh 'echo "Tests passed"'
-        }
-    }
 
     stage('Push image') {
         
