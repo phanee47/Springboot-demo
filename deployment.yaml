@@ -18,7 +18,7 @@ spec:
         app: springdemo
     spec:
       containers:
-      - image: phanee47/springtest:6
+      - image: phanee47/springtest:8
         name: springdemo
         resources: {}
 status: {}
