@@ -7,6 +7,10 @@ node {
         checkout scm
     }
 
+    stage('mvn build') {
+        sh 'mvn clean package'
+    }
+
     stage('Build image') {
   
        app = docker.build("phanee47/springtest")
