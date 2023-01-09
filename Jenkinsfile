@@ -45,7 +45,9 @@ node {
 }
 
     stage ('run deploy') {
+        withKubeConfig([credentialsId: 'kubeconfig']){
         sh 'kubectl apply -f deployment.yaml'
+        }
     }
 
 }
