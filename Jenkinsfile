@@ -16,7 +16,7 @@ node {
        app = docker.build("phanee47/springtest")
     }
 
-
+/*
     stage('Push image') {
         
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
@@ -50,4 +50,4 @@ node {
         }
     }
 
-}
+}*/
