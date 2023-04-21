@@ -16,6 +16,7 @@ node {
        app = docker.build("phanee47/springtest")
     }
 
+}
 /*
     stage('Push image') {
         
@@ -50,4 +51,6 @@ node {
         }
     }
 
-}*/
+}
+
+*/
